@@ -12,7 +12,6 @@ const Signup = () =>{
  })
  const router = useRouter()
  const handleSignup = async()=>{
-    console.log("asddggh", user)
     try{
         const response = await axios.post("/api/userAuth/signup", user);
         router.push('/login')
