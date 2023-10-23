@@ -7,7 +7,10 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 const UserProfile = () => {
 
-    const [profileData, setProfileData] = useState({})
+    const [profileData, setProfileData] = useState({
+        username:"",
+        email:""
+    })
     const router = useRouter()
 
     const getUserProfileDetails = async () => {
